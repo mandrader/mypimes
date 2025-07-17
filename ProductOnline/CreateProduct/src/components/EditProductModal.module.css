@@ -1,0 +1,88 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 280px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.modal h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.modal label {
+  color: #000;             /* color del texto de la etiqueta */
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+
+.modal input {
+  color: #000;             /* texto en negro */
+  background-color: #fff;  /* fondo blanco */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.modal .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.modal button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.modal button[type="submit"] {
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.modal button[type="button"] {
+  background-color: transparent;
+  color: #4d4d4d;
+}
+
+.modal button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.success {
+  color: green;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
